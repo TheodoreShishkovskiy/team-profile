@@ -1,14 +1,14 @@
 // These are the requirements
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = rquire("util");
+const util = require("util");
 const Manager = require("./lib/Manager");
-const Engineer = require(".lib/Engingeer");
-const Intern = require(".lib/Intern");
-const html = require(".src/htmlTemp");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const html = require("./src/htmlTemp");
 const validator = require("email-validator");
 
-// Async functions
+// async functions
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
 
@@ -17,25 +17,25 @@ let teamString = ``;
 
 console.clear();
 console.log("---------------------------------------------");
-console.log("Team Portfolio Generator by TheodoreShishkovskiy");
+console.log("Team Portfolio Generator by nosremetnarg")
 
-// Main functions needed to run the application
+// Main function to run application
 async function main() {
     try {
         await prompt()
 
-        for (let i=0; i < teamArray.length; i++) {
+        for (let i = 0; i < teamArray.length; i++) {
             teamString = teamString + html.generateCard(teamArray[i]);
         }
 
-        let finalHTML = html.generateHTML(teamString)
+        let finalHtml = html.generateHTML(teamString)
 
         console.clear();
         console.log("---------------------------------------------");
         console.log("Generating index.html file....");
         console.log("---------------------------------------------");
 
-        writeFileAsync("./dist/index.html", finalHTML);
+        writeFileAsync("./dist/index.html", finalHtml);
 
         console.clear();
         console.log("---------------------------------------------");
@@ -47,7 +47,7 @@ async function main() {
     }
 }
 
-// Inquirer prompts to collect the needed user data
+// Inquirer prompts to collect user data
 async function prompt() {
     let responseDone = "";
 
@@ -152,4 +152,3 @@ async function prompt() {
 }
 
 // initial program
-main();

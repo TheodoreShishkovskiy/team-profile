@@ -1,6 +1,28 @@
 {
+  "name": "teambuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "dependencies": {
-    "inquirer": "^9.1.1",
-    "jest": "^29.0.3"
-  }
+    "email-validator": "^2.0.4",
+    "inquirer": "^7.3.3",
+    "jest": "^26.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheodoreShishkovskiy/team-profile.git"
+  },
+  "author": "Theodore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheodoreShishkovskiy/team-profile/issues"
+  },
+  "homepage": "https://github.com/TheodoreShishkovskiy/team-profile#readme"
 }
