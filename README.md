@@ -21,4 +21,4 @@
 This app uses Node, NPM, Inquirer, Jest and Email-validation. Users will follow prompts and then recieve a webpage with their teams info and contact.
 
 ## Videos
-🎥 The full video file can be found here [here](https://drive.google.com/file/d/1vM8qcJ6LwTFmSU4bTvGUhVjC_AhFNn__/view?usp=sharing)
+🎥 The full video file can be found here [here](https://drive.google.com/file/d/1JifkFaWHANtS01QIMAeBQIECPKbxmsSr/view?usp=sharing)
