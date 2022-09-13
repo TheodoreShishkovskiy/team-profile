@@ -17,7 +17,7 @@ let teamString = ``;
 
 console.clear();
 console.log("---------------------------------------------");
-console.log("Team Portfolio Generator by nosremetnarg")
+console.log("Team Portfolio Generator by TheodoreShishkovskiy")
 
 // Main function to run application
 async function main() {
@@ -152,3 +152,4 @@ async function prompt() {
 }
 
 // initial program
+main();
